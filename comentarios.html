@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Comentários</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+ }
+
+h1 {
+  text-align: center;
+  color:#55be55;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 20px;
+  color: white;
+}
+.comment:hover{
+    color: #55be55;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-content {
+  flex-grow: 1;
+}
+
+h3 {
+  margin: 0;
+  color: #55be55;
+ 
+}
+
+.comment-form {
+  margin-top: 30px;
+  color: #fff;
+}
+
+.comment-form h2 {
+  margin-bottom: 10px;
+  color: #55be55;
+
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+button {
+  background-color: #55be55;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+}
+</style>
+<body>
+  <h1>Comentários</h1>
+
+  <div class="comment">
+    <img src="./carro hamilton.jpeg" alt="Avatar 1" class="avatar">
+    <div class="comment-content">
+      <h3>Mercedez</h3>
+      <p>A Mercedes já conquistou 7 títulos do Mundial de Construtores da Fórmula 1.
+         A equipe alemã foi campeã em todas as temporadas da categoria desde 2014 até 2020.
+          Ou seja, a Mercedes venceu o campeonato de equipes em 2014, 2015, 2016, 2017, 2018, 2019 e 2020.</p>
+    </div>
+  </div>
+
+  <div class="comment">
+    <img src="./miniatura max.jpeg" alt="Avatar 2" class="avatar">
+    <div class="comment-content">
+      <h3>Red Bull</h3>
+      <p>A Red Bull Racing estreou na Fórmula 1 em 2005.
+         Já não é nenhuma novata, está habituada a vencer corridas, 
+         fazer poles e já conquistou cinco títulos mundiais de pilotos e quatro de construtores.</p>
+    </div>
+  </div>
+
+  <div class="comment">
+    <img src="./miniatura charles.jpeg" alt="Avatar 3" class="avatar">
+    <div class="comment-content">
+      <h3>Ferrari</h3>
+      <p>Em toda a sua história, a Scuderia Ferrari já conquistou 15 títulos do mundial de pilotos da Fórmula 1.
+         As conquistas aconteceram nas temporadas 1952, 1953, 1956, 1958, 1961, 1964, 1975, 1977, 1979, 2000, 2001, 2002, 2003, 2004 e 2007.
+          Michael Schumacher, com 5 títulos, é o maior campeão da história da Ferrari.</p>
+    </div>
+  </div>
+
+  <form class="comment-form">
+    <h2>Deixe um comentário</h2>
+    <input type="text" placeholder="Nome" required>
+    <textarea placeholder="Digite seu comentário" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+</body>
+</html>
